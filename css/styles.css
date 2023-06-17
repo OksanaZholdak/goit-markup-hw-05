@@ -125,8 +125,10 @@ body {
   align-items: center;
   padding: 24px 0;
   position: relative;
-  color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-class-link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover {
@@ -251,6 +253,7 @@ body {
   margin: 0 auto;
   min-width: 169px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: bbackground-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* section - 2 */
@@ -550,7 +553,6 @@ body {
   width: calc((100% - 48px) / 3);
   margin: 0px;
   display: block;
-
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -658,6 +660,7 @@ body {
 .footer-net-item {
   width: 40px;
   height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svg-fail-footer {
