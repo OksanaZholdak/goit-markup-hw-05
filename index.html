@@ -17,12 +17,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>goit-markup-hw-05</title>
   </head>
 
   <body>
-
     <!--head site-->
 
     <header class="header">
@@ -34,7 +37,9 @@
               <a href="./index.html" class="nav-link link">Studio</a>
             </li>
             <li>
-              <a href="./portfolio.html" class="nav-link link">Portfolio</a>
+              <a href="./portfolio.html" class="nav-link link"
+                >Portfolio</a
+              >
             </li>
             <li>
               <a href="" class="nav-link link">Contacts</a>
@@ -45,7 +50,7 @@
         <address class="address-header">
           <ul class="navigation list">
             <li>
-              <a href="mailto:info@devstudio.com" class="contact-link link"
+              <a href="mailto:info@devstudio.co m" class="contact-link link"
                 >info@devstudio.com</a
               >
             </li>
@@ -69,7 +74,9 @@
             Effective Solutions <br />
             for Your Business
           </h1>
-          <button type="button" class="button">Order Service</button>
+          <button type="button" class="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -443,42 +450,60 @@
             <li class="customers-item">
               <a href="" class="custumers-link customer link">
                 <svg class="svg-customers" width="104" height="56">
-                  <use href="./images/icons.svg#icon-Logo" class="svg-use-customers"></use>
+                  <use
+                    href="./images/icons.svg#icon-Logo"
+                    class="svg-use-customers"
+                  ></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a href="" class="custumers-link customer link">
                 <svg class="svg-customers" width="104" height="56">
-                  <use href="./images/icons.svg#icon-Logo-1" class="svg-use-customers"></use>
+                  <use
+                    href="./images/icons.svg#icon-Logo-1"
+                    class="svg-use-customers"
+                  ></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a href="" class="custumers-link customer link">
                 <svg class="svg-customers" width="104" height="56">
-                  <use href="./images/icons.svg#icon-Logo-2" class="svg-use-customers"></use>
+                  <use
+                    href="./images/icons.svg#icon-Logo-2"
+                    class="svg-use-customers"
+                  ></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a href="" class="custumers-link customer link"
                 ><svg class="svg-customers" width="104" height="56">
-                  <use href="./images/icons.svg#icon-Logo-3" class="svg-use-customers"></use>
+                  <use
+                    href="./images/icons.svg#icon-Logo-3"
+                    class="svg-use-customers"
+                  ></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a href="" class="custumers-link customer link">
                 <svg class="svg-customers" width="104" height="56">
-                  <use href="./images/icons.svg#icon-Logo-4" class="svg-use-customers"></use>
+                  <use
+                    href="./images/icons.svg#icon-Logo-4"
+                    class="svg-use-customers"
+                  ></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a href="" class="custumers-link customer link">
                 <svg class="svg-customers" width="104" height="56">
-                  <use href="./images/icons.svg#icon-Logo-6" class="svg-use-customers"></use>
+                  <use
+                    href="./images/icons.svg#icon-Logo-5"
+                    class="svg-use-customers"
+                  ></use>
                 </svg>
               </a>
             </li>
@@ -488,7 +513,7 @@
     </main>
 
     <!--footer-->
-    
+
     <footer class="footer-into">
       <div class="container footer-container">
         <div class="footer-web">
@@ -561,5 +586,20 @@
         </div>
       </div>
     </footer>
+
+    <!-- script -->
+    <!-- modal window -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="button-close" data-modal-close>
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
